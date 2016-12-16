@@ -4,7 +4,7 @@ $packageName = 'foobar2000'
 $registryUninstallerKeyName = 'foobar2000'
 $uninstallerName = 'uninstall.exe'
 $shouldUninstall = $true
-
+$silentArgs = '/S'
 $machine_key   = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$registryUninstallerKeyName"
 $machine_key6432 = "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$registryUninstallerKeyName"
 
