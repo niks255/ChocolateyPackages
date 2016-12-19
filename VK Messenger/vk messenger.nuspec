@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>vkmessenger</id>
+    <version>1.0.0.203</version>
+    <title>VK Messenger</title>
+    <authors>V Kontakte LLC</authors>
+    <owners>niks255</owners>
+    <projectUrl>https://vk.com/landings/desktop_messenger</projectUrl>
+    <iconUrl>https://vk.com/images/safari_120.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple and Easy App for Messaging on VK.</description>
+    <summary>VK Messenger</summary>
+    <tags>vk vkontakte messenger admin</tags>
+    <packageSourceUrl>https://github.com/niks255/ChocolateyPackages</packageSourceUrl>
+  </metadata>
+</package>
