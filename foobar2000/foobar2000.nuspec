@@ -14,5 +14,8 @@
     <summary>foobar2000</summary>
     <tags>foobar2000 media player admin</tags>
     <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.0.4" />
+    </dependencies>
   </metadata>
 </package>

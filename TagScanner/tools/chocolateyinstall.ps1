@@ -9,11 +9,10 @@ $packageArgs = @{
   unzipLocation = $toolsDir
   fileType      = 'EXE' 
   url           = $url
-  silentArgs    = "/VERYSILENT /NORESTART /SP- /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS"
-  validExitCodes= @(0)
-  registryUninstallerKey = 'TagScanner_is1'
   checksum      = '28ECADA41B6E37C57074B1A4125A0BAE'
   checksumType  = 'md5'
+  silentArgs    = "/VERYSILENT /NORESTART /SP- /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS"
+  validExitCodes= @(0)
 }
 
 Install-ChocolateyPackage @packageArgs

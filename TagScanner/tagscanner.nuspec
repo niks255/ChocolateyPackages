@@ -38,5 +38,8 @@ Changed: Old СOVERART fields from Vorbis Comments will be converted to the new 
 Changed: ENCODER field from Vorbis Comments no longer mapped to ENCODEDBY to prevent possible problems with MQA encoded files</releaseNotes>
     <copyright>(c) 1999-2015 Sergey Serkov</copyright>
     <tags>tagscanner tag mp3 scanner id3 admin</tags>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.0.4" />
+    </dependencies>
   </metadata>
 </package>

@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
  
-$packageName = 'TagScanner'
+$packageName = 'UninstallTool'
 
-$key = Get-UninstallRegistryKey $packageName
+$key = Get-UninstallRegistryKey 'Uninstall Tool'
 $file = $key.UninstallString
 
 $installerType = 'exe'
