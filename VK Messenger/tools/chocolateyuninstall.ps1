@@ -1,26 +1,14 @@
 ﻿$ErrorActionPreference = 'Stop';
  
 $packageName = 'vkmessenger'
-$registryUninstallerKeyName = 'VK_is1'
-$shouldUninstall = $true
- 
-$machine_key   = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$registryUninstallerKeyName"
-$machine_key6432 = "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$registryUninstallerKeyName"
- 
-$file = @($machine_key, $machine_key6432) `
-    | ?{ Test-Path $_ } `
-    | Get-ItemProperty `
-    | Select-Object -ExpandProperty UninstallString
- 
-if ($file -eq $null -or $file -eq '') {
-    Write-Host "$packageName has already been uninstalled by other means."
-    $shouldUninstall = $false
-}
- 
+
+$key = Get-UninstallRegistryKey 'VK'
+$file = $key.UninstallString
+
 $installerType = 'exe'
 $silentArgs = "/SILENT"
 $validExitCodes = @(0)
- 
-if ($shouldUninstall) {
- Uninstall-ChocolateyPackage -PackageName $packageName -FileType $installerType -SilentArgs $silentArgs -validExitCodes $validExitCodes -File $file
+
+if ($file -ne $null -and $file -ne '') {
+    Uninstall-ChocolateyPackage -PackageName $packageName -FileType $installerType -SilentArgs $silentArgs -validExitCodes $validExitCodes -File $file
 }
