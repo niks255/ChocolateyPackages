@@ -13,7 +13,7 @@
     <description>foobar2000 is an advanced freeware audio player for the Windows platform. Some of the basic features include full unicode support, ReplayGain support and native support for several popular audio formats.</description>
     <summary>foobar2000</summary>
     <tags>foobar2000 media player admin</tags>
-    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/niks255/ChocolateyPackages</packageSourceUrl>
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.0.4" />
     </dependencies>

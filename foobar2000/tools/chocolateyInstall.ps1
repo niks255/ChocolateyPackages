@@ -2,12 +2,13 @@
 
 $ErrorActionPreference = "Stop"
 
-$url='https://softpedia-secure-download.com/dl/163d25bae81ec75618fecc6b3f823434/585c175f/100006492/software/multimedia/player/foobar2000_v1.3.14.exe'
+$temp = ((Invoke-WebRequest -Uri 'http://filehippo.com/download_foobar2000/').Links | Where-Object {$_.class -Like "*program-header-download-link green button-link active long download-button*"}).href
+$url = "http://filehippo.com"+((Invoke-WebRequest -Uri $temp ).Links | Where-Object {$_.outerHTML -Like "*id=download-link*"}).href
 
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
-  fileType      = 'EXE' 
+  fileType      = 'exe' 
   url           = $url
   silentArgs    = "/S"
   validExitCodes= @(0)
