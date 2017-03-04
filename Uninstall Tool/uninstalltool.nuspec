@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>uninstalltool</id>
-    <version>3.5.1.5510</version>
+    <version>3.5.2.5554</version>
     <title>Uninstall tool</title>
     <authors>CrystalIdea Software</authors>
     <owners>niks255</owners>
@@ -29,9 +29,20 @@ Control Panel icon, HTML reports, running different Windows tools and much more.
 
 This is a trial version, which will expire in 30 days. To continue using Uninstall tool after that you need to purchase it. Go here for more details http://www.crystalidea.com/purchase</description>
     <summary>Unique and Powerful Uninstaller</summary>
-    <releaseNotes>IMPROVED Improved calculating of occupied space of an app
-FIXED Improvements for Windows Tasks in Startup programs
-FIXED Multiple bug fixes in trial version
+    <releaseNotes>NEW Uninstall Tool now remembers (apps list) sorting parameters between its launches
+IMPROVED Uninstall Wizard leftovers scan speed is significantly increased (really noticeable, specially on Windows 10)
+IMPROVED Size calculation algorithm now includes data folders (e.g. in AppData, MyDocuments and others)
+IMPROVED Increased list item height from 32 to 40 px for better readability
+IMPROVED Install Tracker now supports .msp files to append traced data
+IMPROVED The app now works on older CPUs without SSE2 support (Windows XP 32-bit)
+FIXED Fixed Install Tracker now works in Windows 10 with Secure Boot turned on in BIOS
+FIXED Fixed waiting for uninstall process(es) for some apps
+FIXED Fixed delayed removal (after restart) of empty folders in Uninstall Wizard
+FIXED Fixed calculating of apps installation date in Windows 10
+FIXED Fixed displaying of apps updates (sub-items)
+FIXED Fixed algorithm of initial sorting of programs by occupied size
+FIXED Fixed incorrect detection of apps as recent
+FIXED Misc fixes and improvements
 IMPROVED Translations update</releaseNotes>
     <copyright>2004-2016 CrystalIdea Software</copyright>
     <tags>uninstalltool uninstall tool trial admin</tags>

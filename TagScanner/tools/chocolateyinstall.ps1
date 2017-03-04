@@ -2,14 +2,14 @@
 
 
 $packageName = 'TagScanner' 
-$url = 'http://www.xdlab.ru/files/tagscan-6.0.18-setup.exe' 
+$url = 'http://www.xdlab.ru/files/tagscan-6.0.19-setup.exe' 
 
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
   fileType      = 'EXE' 
   url           = $url
-  checksum      = '28ECADA41B6E37C57074B1A4125A0BAE'
+  checksum      = 'CACEFBA062CECFECDFB1D91FB607337E'
   checksumType  = 'md5'
   silentArgs    = "/VERYSILENT /NORESTART /SP- /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS"
   validExitCodes= @(0)

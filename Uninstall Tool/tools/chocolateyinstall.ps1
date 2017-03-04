@@ -1,15 +1,15 @@
 ﻿$ErrorActionPreference = 'Stop'; 
 
 $packageName = 'UninstallTool'
-$url = 'http://www.crystalidea.com/downloads/uninstalltool_setup.exe'
+$url = 'https://www.crystalidea.com/downloads/uninstalltool_setup.exe'
 
 $packageArgs = @{
   packageName   = $packageName
   fileType      = 'EXE'
   url           = $url
-  silentArgs    = "/verysilent"
+  silentArgs    = "/verysilent /norestart"
   validExitCodes= @(0, 3010, 1641)
-  checksum      = 'ECBFF331BC6DC496ED8CDEE2D38031BF'
+  checksum      = 'DEEAE93194739971AE1BA64C4C5F82A7'
   checksumType  = 'md5'
 }
 

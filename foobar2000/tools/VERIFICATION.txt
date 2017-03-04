@@ -1,0 +1,9 @@
+﻿VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+FIle foobar2000_v1.3.14 must match all of the following checksums:
+
+MD5: 63454F7A0E69DAB9B3FE2DFC9A2C6FC6
+SHA1: 7E426953CCE53DF4821E789E2C7B887A8094DE26
+SHA-256: 72D024D258C2F3B6CEA62DC47FB613848202E7F33F2331F6B2E0A8E61DAFFCB6

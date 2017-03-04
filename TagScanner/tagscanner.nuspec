@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tagscanner</id>
-    <version>6.0.18</version>
+    <version>6.0.19</version>
     <title>TagScanner (Install)</title>
     <authors>Sergey Serkov</authors>
     <owners>niks255</owners>
@@ -30,12 +30,14 @@ Full support for Unicode
 Multilanguage interface
 Built-in multiformat player</description>
     <summary>TagScanner is a multifunction program for organizing and managing your music collection.</summary>
-    <releaseNotes>Improved: Handling of non-unique named text frames from ID3v2 tags (more compatible)
-Improved: Accelerated handling of covers for OGG and OPUS files
-New placeholder %_bitrate_type% for VBR or CBR indication (if available)
-Fixed: Work with pictures descriptions in editor
-Changed: Old СOVERART fields from Vorbis Comments will be converted to the new METADATA_BLOCK_PICTURE field while saving
-Changed: ENCODER field from Vorbis Comments no longer mapped to ENCODEDBY to prevent possible problems with MQA encoded files</releaseNotes>
+    <releaseNotes>New functions: $swapprefix, $stripprefix
+Improved: Recognition of APE tags
+Fixed: Handling of templates for Rename folder by tag feature
+Fixed: Incorrect sorting of filelist by user-defined columns
+Changed: APEv2 tag now default for TTA-files
+Changed: Now when you run the program it opens file from passed arguments, rather than scans folder in which it placed
+Updated support for WavPack 5.0 format
+Translation: Turkish</releaseNotes>
     <copyright>(c) 1999-2015 Sergey Serkov</copyright>
     <tags>tagscanner tag mp3 scanner id3 admin</tags>
     <dependencies>
