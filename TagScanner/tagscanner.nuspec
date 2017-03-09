@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tagscanner</id>
-    <version>6.0.19</version>
+    <version>6.0.20</version>
     <title>TagScanner (Install)</title>
     <authors>Sergey Serkov</authors>
     <owners>niks255</owners>
@@ -30,14 +30,12 @@ Full support for Unicode
 Multilanguage interface
 Built-in multiformat player</description>
     <summary>TagScanner is a multifunction program for organizing and managing your music collection.</summary>
-    <releaseNotes>New functions: $swapprefix, $stripprefix
-Improved: Recognition of APE tags
-Fixed: Handling of templates for Rename folder by tag feature
-Fixed: Incorrect sorting of filelist by user-defined columns
-Changed: APEv2 tag now default for TTA-files
-Changed: Now when you run the program it opens file from passed arguments, rather than scans folder in which it placed
-Updated support for WavPack 5.0 format
-Translation: Turkish</releaseNotes>
+    <releaseNotes>New: Feature to quick formatting of field value in Editor
+New: Now you can exclude field from processing using a minus sign before the name
+Improved: Regular Expressions now works with multiline fields
+Fixed: Reading of ID3v2 fields INVOLVEDPEOPLE and MUSICIANCREDITS
+Updated support for FLAC and OPUS
+Translation: Bulgarian</releaseNotes>
     <copyright>(c) 1999-2015 Sergey Serkov</copyright>
     <tags>tagscanner tag mp3 scanner id3 admin</tags>
     <dependencies>
