@@ -7,10 +7,10 @@ $packageArgs = @{
   packageName   = $packageName
   fileType      = 'EXE'
   url           = $url
+  checksum      = '227B62F8115F67BE4F96FFBDF1EF98BD857454368FC17C296E0280B300186EE2'
+  checksumType  = 'sha256'
   silentArgs    = "/verysilent /norestart"
   validExitCodes= @(0, 3010, 1641)
-  checksum      = 'DEEAE93194739971AE1BA64C4C5F82A7'
-  checksumType  = 'md5'
 }
 
 Install-ChocolateyPackage @packageArgs
