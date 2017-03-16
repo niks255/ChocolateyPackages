@@ -7,7 +7,7 @@
     <authors>CrystalIdea Software</authors>
     <owners>niks255</owners>
     <projectUrl>http://www.crystalidea.com/uninstall-tool</projectUrl>
-    <iconUrl>http://www.crystalidea.com/files/images/ut/boxshot.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/niks255/ChocolateyPackages/master/Icons/Uninstall%20tool.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Key Features:
 Completely remove any software! (using Install Tracker (Installation Monitor) and Uninstall Wizard ™ technologies)
