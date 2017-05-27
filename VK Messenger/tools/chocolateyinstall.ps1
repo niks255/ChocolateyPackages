@@ -11,10 +11,10 @@ $packageArgs = @{
   fileType          = 'EXE'
   url               = $url
   url64bit          = $url64
-  checksum          = '4A350DAD02B8CF3C3A3078D10AF4B4AC'
-  checksum64        = '936804AC17273162CD2824B21285F35C'
-  checksumType      = 'md5'
-  checksumType64    = 'md5'
+  checksum          = '0DACB43FF194FDA193CFC46BEBB8B7421F024774452EEB418A52378C310AA7BE'
+  checksum64        = 'B29D7D98C9917EF19F4C652CE0283B3C712F1D616432A096731DE0E76BFC2246'
+  checksumType      = 'sha256'
+  checksumType64    = 'sha256'
   silentArgs        = "/VERYSILENT /NORESTART /SP- /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS"
   validExitCodes= @(0)
 }

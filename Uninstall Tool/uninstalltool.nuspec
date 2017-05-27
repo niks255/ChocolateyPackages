@@ -33,6 +33,8 @@ This is a trial version, which will expire in 30 days. To continue using Uninsta
 FIXED Fixed detection of install location of certain apps (Adobe products)
 FIXED Fixed enabling/disabling of startup apps</releaseNotes>
     <copyright>2004-2016 CrystalIdea Software</copyright>
+    <licenseUrl>https://www.crystalidea.com/eula</licenseUrl>
+    <mailingListUrl>https://forums.crystalidea.com/viewforum.php?f=1&sid=0b7759cdc614b044b7ae030b6bddd941</mailingListUrl>
     <tags>uninstalltool uninstall tool trial admin</tags>
     <packageSourceUrl>https://chocolatey.org/packages/uninstalltool</packageSourceUrl>
     <dependencies>
