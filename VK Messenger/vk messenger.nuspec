@@ -9,8 +9,9 @@
     <projectUrl>https://vk.com/landings/desktop_messenger</projectUrl>
     <iconUrl>https://vk.com/images/safari_120.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Simple and Easy App for Messaging on VK.</description>
+    <description>Simple and Convenient Messaging App for VK.</description>
     <summary>VK Messenger</summary>
+    <licenseUrl>https://vk.com/terms</licenseUrl>
     <tags>vk vkontakte messenger admin</tags>
     <packageSourceUrl>https://github.com/niks255/ChocolateyPackages</packageSourceUrl>
     <dependencies>
