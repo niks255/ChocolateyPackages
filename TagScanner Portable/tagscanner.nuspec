@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tagscanner.portable</id>
-    <version>6.0.21</version>
+    <version>6.0.22</version>
     <title>TagScanner (Portable)</title>
     <authors>Sergey Serkov</authors>
     <owners>niks255</owners>
@@ -30,13 +30,10 @@ Full support for Unicode
 Multilanguage interface
 Built-in multiformat player</description>
     <summary>TagScanner is a multifunction program for organizing and managing your music collection.</summary>
-    <releaseNotes>New: Support for DSDIFF files (.DFF)
-New: Support for new ID3v2 and MP4 tag fields from iTunes
-New scripting function isnumber(x)
-Ability to rename field in advanced tag editor
-Fixed possible FLAC files corruption for files without padding blocks
-Temporary disabled lookups on non-US Amazon sites
-Translation: Japanese, Italian, Finnish, Catalan</releaseNotes>
+    <releaseNotes>Amazon removed from list of supported web services after Amazon canceled project's accounts
+Now all lists with user-defined templates can store up to 50 values
+Updated support for OPUS
+Translation: Bulgarian, German</releaseNotes>
     <copyright>(c) 1999-2015 Sergey Serkov</copyright>
     <tags>tagscanner tag mp3 scanner id3</tags>
   </metadata>
