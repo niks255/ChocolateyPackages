@@ -2,7 +2,7 @@
  
 $packageName = 'vkmessenger'
 
-$key = Get-UninstallRegistryKey 'VK'
+$key = Get-UninstallRegistryKey 'VK messenger'
 $file = $key.UninstallString
 
 $installerType = 'exe'
