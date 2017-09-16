@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tagscanner</id>
-    <version>6.0.22</version>
+    <version>6.0.23</version>
     <title>TagScanner (Install)</title>
     <authors>Sergey Serkov</authors>
     <owners>niks255</owners>
@@ -30,10 +30,16 @@ Full support for Unicode
 Multilanguage interface
 Built-in multiformat player</description>
     <summary>TagScanner is a multifunction program for organizing and managing your music collection.</summary>
-    <releaseNotes>Amazon removed from list of supported web services after Amazon canceled project's accounts
-Now all lists with user-defined templates can store up to 50 values
-Updated support for OPUS
-Translation: Bulgarian, German</releaseNotes>
+    <releaseNotes>New keyboard shortcut Ctrl+Shift+R and toolbar button for Rename folder by tag wizard
+New ability to load and save user-defined gernes from external files
+Support for reading of ID3v2 UFID frame
+Progam now are remember last used playlist name
+Most of buttons on toolbars now may change their state depending on selection
+Fixed: Can't remove metadata from DFF files
+Fixed: Program crashes if files structure change outside interface
+Fixed: Saving of some ID3v2 frames with incorrect encoding
+Translation: Portuguese (Brazil), Persian, Chinese Simplified
+</releaseNotes>
     <copyright>(c) 1999-2015 Sergey Serkov</copyright>
     <tags>tagscanner tag mp3 scanner id3 admin</tags>
     <dependencies>
