@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>uninstalltool</id>
-    <version>3.5.3.5561</version>
+    <version>3.5.3.5563</version>
     <title>Uninstall tool</title>
     <authors>CrystalIdea Software</authors>
     <owners>niks255</owners>
@@ -29,12 +29,9 @@ Control Panel icon, HTML reports, running different Windows tools and much more.
 
 This is a trial version, which will expire in 30 days. To continue using Uninstall tool after that you need to purchase it. Go here for more details http://www.crystalidea.com/purchase</description>
     <summary>Unique and Powerful Uninstaller</summary>
-    <releaseNotes>FIXED Fixed detection of Windows Store Apps icons
-FIXED Fixed detection of install location of certain apps (Adobe products)
-FIXED Fixed enabling/disabling of startup apps</releaseNotes>
+    <releaseNotes>Stability improvements, small fixes</releaseNotes>
     <copyright>2004-2016 CrystalIdea Software</copyright>
     <licenseUrl>https://www.crystalidea.com/eula</licenseUrl>
-    <mailingListUrl>https://forums.crystalidea.com/viewforum.php?f=1&sid=0b7759cdc614b044b7ae030b6bddd941</mailingListUrl>
     <tags>uninstalltool uninstall tool trial admin</tags>
     <packageSourceUrl>https://chocolatey.org/packages/uninstalltool</packageSourceUrl>
     <dependencies>
