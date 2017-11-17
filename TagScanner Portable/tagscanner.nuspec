@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tagscanner.portable</id>
-    <version>6.0.23</version>
+    <version>6.0.25</version>
     <title>TagScanner (Portable)</title>
     <authors>Sergey Serkov</authors>
     <owners>niks255</owners>
@@ -30,10 +30,17 @@ Full support for Unicode
 Multilanguage interface
 Built-in multiformat player</description>
     <summary>TagScanner is a multifunction program for organizing and managing your music collection.</summary>
-    <releaseNotes>Amazon removed from list of supported web services after Amazon canceled project's accounts
-Now all lists with user-defined templates can store up to 50 values
-Updated support for OPUS
-Translation: Bulgarian, German</releaseNotes>
+    <releaseNotes>New: Online results window are now shows track length if available
+Improved: Stability while saving tags into multiple huge files
+Improved: Now you can paste single tag from buffer to all selected files
+Improved: Playback loop control
+Improved: Fast forward and rewind while playing
+Improved: Program are now import genre info from Discogs to CONTENTGROUP field
+Improved: Additional logic on parsing Vorbis comments fields from foobar2000
+Updated MP4 metadata support
+Changed: Program now use 'xxx' language marker for ID3v2 frame USLT to prevent problems with reading lyrics in some players
+Translation: Bulgarian, Serbian (Latin)
+</releaseNotes>
     <copyright>(c) 1999-2015 Sergey Serkov</copyright>
     <tags>tagscanner tag mp3 scanner id3</tags>
   </metadata>

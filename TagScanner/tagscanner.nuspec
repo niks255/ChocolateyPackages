@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tagscanner</id>
-    <version>6.0.23</version>
+    <version>6.0.25</version>
     <title>TagScanner (Install)</title>
     <authors>Sergey Serkov</authors>
     <owners>niks255</owners>
@@ -30,15 +30,16 @@ Full support for Unicode
 Multilanguage interface
 Built-in multiformat player</description>
     <summary>TagScanner is a multifunction program for organizing and managing your music collection.</summary>
-    <releaseNotes>New keyboard shortcut Ctrl+Shift+R and toolbar button for Rename folder by tag wizard
-New ability to load and save user-defined gernes from external files
-Support for reading of ID3v2 UFID frame
-Progam now are remember last used playlist name
-Most of buttons on toolbars now may change their state depending on selection
-Fixed: Can't remove metadata from DFF files
-Fixed: Program crashes if files structure change outside interface
-Fixed: Saving of some ID3v2 frames with incorrect encoding
-Translation: Portuguese (Brazil), Persian, Chinese Simplified
+    <releaseNotes>New: Online results window are now shows track length if available
+Improved: Stability while saving tags into multiple huge files
+Improved: Now you can paste single tag from buffer to all selected files
+Improved: Playback loop control
+Improved: Fast forward and rewind while playing
+Improved: Program are now import genre info from Discogs to CONTENTGROUP field
+Improved: Additional logic on parsing Vorbis comments fields from foobar2000
+Updated MP4 metadata support
+Changed: Program now use 'xxx' language marker for ID3v2 frame USLT to prevent problems with reading lyrics in some players
+Translation: Bulgarian, Serbian (Latin)
 </releaseNotes>
     <copyright>(c) 1999-2015 Sergey Serkov</copyright>
     <tags>tagscanner tag mp3 scanner id3 admin</tags>
