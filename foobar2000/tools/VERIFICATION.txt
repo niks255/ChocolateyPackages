@@ -2,8 +2,8 @@
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-FIle foobar2000_v1.3.16 must match all of the following checksums:
+FIle foobar2000_v1.3.17 must match all of the following checksums:
 
-MD5: 261E8F5E6A59681D18BD9942BB0B819C
-SHA1: 7DA7C051AB3CC721DCA1829377436E67BECC6CE0
-SHA-256: C4BE0FBDCBAC2378C837B3EEFC65E033FF7DA592317017C373399F6CB2763F94
+MD5: 8372302e5b03286709a1482eb25a1975
+SHA1: d28469364999cbe726a9b18bda0d3d9253be618f
+SHA-256: a45b63598ddc0645aedb57a715c285b249e2f66831973aef993895e39edf534d
