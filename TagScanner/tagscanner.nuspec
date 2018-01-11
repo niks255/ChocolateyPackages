@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tagscanner</id>
-    <version>6.0.25</version>
+    <version>6.0.26</version>
     <title>TagScanner (Install)</title>
     <authors>Sergey Serkov</authors>
     <owners>niks255</owners>
@@ -30,16 +30,13 @@ Full support for Unicode
 Multilanguage interface
 Built-in multiformat player</description>
     <summary>TagScanner is a multifunction program for organizing and managing your music collection.</summary>
-    <releaseNotes>New: Online results window are now shows track length if available
-Improved: Stability while saving tags into multiple huge files
-Improved: Now you can paste single tag from buffer to all selected files
-Improved: Playback loop control
-Improved: Fast forward and rewind while playing
-Improved: Program are now import genre info from Discogs to CONTENTGROUP field
-Improved: Additional logic on parsing Vorbis comments fields from foobar2000
-Updated MP4 metadata support
-Changed: Program now use 'xxx' language marker for ID3v2 frame USLT to prevent problems with reading lyrics in some players
-Translation: Bulgarian, Serbian (Latin)
+    <releaseNotes>Improved: Dramatically decreased memory consumption for undo changes feature
+Improved: Player are now may switch output device on-the-fly
+Fixed: Can't undoing cover resizing
+Fixed: Manual sorting of text replacement rules
+Fixed: Paste tag into multiple files
+Updated support for MPEG to improve detection of Lame encoded files
+Translation: Japanese, Bulgarian
 </releaseNotes>
     <copyright>(c) 1999-2015 Sergey Serkov</copyright>
     <tags>tagscanner tag mp3 scanner id3 admin</tags>
