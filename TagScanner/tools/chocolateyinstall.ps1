@@ -1,13 +1,13 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 
 $packageName = 'TagScanner' 
-$url = 'https://www.xdlab.ru/files/tagscan-6.0.26-setup.exe' 
+$url = 'https://www.xdlab.ru/files/tagscan-6.0.27-setup.exe' 
 
 $packageArgs = @{
   packageName   = $packageName
   fileType      = 'exe' 
   url           = $url
-  checksum      = 'F8A373EA5FC98D4399A7F55D12F2A21C526B3FFD74BC6B848907B5481E92D2EF'
+  checksum      = 'DFD0D3AADB6C49D03E922C17347227C468B55D3DDC8DABB2B0CBA76EA6B4EE46'
   checksumType  = 'sha256'
   silentArgs    = "/VERYSILENT /NORESTART /SP- /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS"
   validExitCodes= @(0)

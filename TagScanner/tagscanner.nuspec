@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tagscanner</id>
-    <version>6.0.26</version>
+    <version>6.0.27</version>
     <title>TagScanner (Install)</title>
     <authors>Sergey Serkov</authors>
     <owners>niks255</owners>
@@ -30,13 +30,11 @@ Full support for Unicode
 Multilanguage interface
 Built-in multiformat player</description>
     <summary>TagScanner is a multifunction program for organizing and managing your music collection.</summary>
-    <releaseNotes>Improved: Dramatically decreased memory consumption for undo changes feature
-Improved: Player are now may switch output device on-the-fly
-Fixed: Can't undoing cover resizing
-Fixed: Manual sorting of text replacement rules
-Fixed: Paste tag into multiple files
-Updated support for MPEG to improve detection of Lame encoded files
-Translation: Japanese, Bulgarian
+    <releaseNotes>Updated support for CoverArtArchive base which used by Musicbrainz service
+New function: $in(x,y) returns true, if X contains Y
+Fixed: Unable to clear Album Artist field inside Vorbis in some cases
+Changed: $strpos function now case insensitive
+Updated playback engine
 </releaseNotes>
     <copyright>(c) 1999-2015 Sergey Serkov</copyright>
     <tags>tagscanner tag mp3 scanner id3 admin</tags>
