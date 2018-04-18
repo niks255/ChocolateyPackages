@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>uninstalltool</id>
-    <version>3.5.4.5572</version>
+    <version>3.5.5.5580</version>
     <title>Uninstall tool</title>
     <authors>CrystalIdea Software</authors>
     <owners>niks255</owners>
@@ -30,8 +30,10 @@ Control Panel icon, HTML reports, running different Windows tools and much more.
 
 This is a trial version, which will expire in 30 days. To continue using Uninstall tool after that you need to purchase it. Go here for more details http://www.crystalidea.com/purchase</description>
     <summary>Unique and Powerful Uninstaller</summary>
-    <releaseNotes>- Fixed problem with incorrect calculation of occupied size of apps with shared install locations
-- Fixed errors in Windows Error Log related to UninstallToolHelper.exe</releaseNotes>
+    <releaseNotes>Optimized the app size (smaller)
+Translations update
+Fixed drawing disabled icons on a retina-screen
+</releaseNotes>
     <copyright>2004-2016 CrystalIdea Software</copyright>
     <tags>uninstalltool uninstall tool trial admin</tags>
     <packageSourceUrl>https://chocolatey.org/packages/uninstalltool</packageSourceUrl>
