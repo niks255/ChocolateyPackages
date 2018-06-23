@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tagscanner.portable</id>
-    <version>6.0.27</version>
+    <version>6.0.29</version>
     <title>TagScanner (Portable)</title>
     <authors>Sergey Serkov</authors>
     <owners>niks255</owners>
@@ -30,11 +30,12 @@ Full support for Unicode
 Multilanguage interface
 Built-in multiformat player</description>
     <summary>TagScanner is a multifunction program for organizing and managing your music collection.</summary>
-    <releaseNotes>Updated support for CoverArtArchive base which used by Musicbrainz service
-New function: $in(x,y) returns true, if X contains Y
-Fixed: Unable to clear Album Artist field inside Vorbis in some cases
-Changed: $strpos function now case insensitive
-Updated playback engine
+    <releaseNotes>New placeholders: %_cover_size% , %_cover_width% , %_cover_height%
+New function: if2(x1,x2,x3,...) returns first non-empty argument
+Improved: Bypass of malformed WAV files
+Improved: Additional information for classical music from Discogs
+Improved: Adittional processing of subtracks from Discogs
+Additional checks for names conflict on folder renaming
 </releaseNotes>
     <copyright>(c) 1999-2015 Sergey Serkov</copyright>
     <tags>tagscanner tag mp3 scanner id3</tags>
