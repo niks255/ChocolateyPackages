@@ -1,0 +1,9 @@
+﻿VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+FIle Free_Encoder_Pack_2018-05-22.exe must match all of the following checksums:
+
+MD5: 25118176755c08cff7e6fb4419e463eb
+SHA1: b7916e83c87020668d7b3b55cbc0d62b8f4e426c
+SHA-256: e720abf6dcf0e6ec9ea0e9adbeaee5641e264667c43529ff52b05d5debe32fb6

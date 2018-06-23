@@ -2,7 +2,7 @@
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-FIle foobar2000_v1.3.18 must match all of the following checksums:
+FIle foobar2000_v1.3.18.exe must match all of the following checksums:
 
 MD5: 4220d5d0025d6d1fd10ec35e264a46eb
 SHA1: ff086fdf0bfc3725c68dd92be7832d78d964d7b9
