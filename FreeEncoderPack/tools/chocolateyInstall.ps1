@@ -6,7 +6,7 @@ $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
   fileType      = 'exe' 
-  file          = Join-Path $toolsDir 'Free_Encoder_Pack_2018-05-22.exe'
+  file          = Join-Path $toolsDir 'Free_Encoder_Pack.exe'
   silentArgs    = '/S'
   validExitCodes= @(0)
 }
