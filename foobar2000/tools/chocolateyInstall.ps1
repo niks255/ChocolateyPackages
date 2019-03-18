@@ -6,7 +6,7 @@ $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
   fileType      = 'exe' 
-  file          = Join-Path $toolsDir 'foobar2000_v1.4.2.exe'
+  file          = Join-Path $toolsDir 'foobar2000.exe'
   silentArgs    = '/S'
   validExitCodes= @(0)
 }
