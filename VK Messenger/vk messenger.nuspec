@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>vkmessenger</id>
-    <version>4.1.6.20190319</version>
+    <version>4.2.0.20190326</version>
     <title>VK Messenger</title>
     <authors>V Kontakte LLC</authors>
     <owners>niks255</owners>

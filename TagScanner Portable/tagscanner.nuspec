@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tagscanner.portable</id>
-    <version>6.0.33</version>
+    <version>6.0.34</version>
     <title>TagScanner (Portable)</title>
     <authors>Sergey Serkov</authors>
     <owners>niks255</owners>
@@ -30,14 +30,6 @@ Full support for Unicode
 Multilanguage interface
 Built-in multiformat player</description>
     <summary>TagScanner is a multifunction program for organizing and managing your music collection.</summary>
-    <releaseNotes>Improved: Autonumbering wizard are now saves settings
-Improved: MEDIATYPE field now imported from online services
-Improved: All previews are now updated in real time on Transformations selection
-Fixed: Memory leak in scripting engine cause "Out of memory" error
-Starting work to make program more friendly for screen readers
-Updated playbak engine
-Translation: Japanese, Bulgarian, German, Norwegian, Czech
-</releaseNotes>
     <copyright>(c) 1999-2019 Sergey Serkov</copyright>
     <tags>tagscanner tag mp3 scanner id3</tags>
   </metadata>
