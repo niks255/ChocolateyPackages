@@ -2,8 +2,6 @@
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-FIle Free_Encoder_Pack.exe must match all of the following checksums:
+FIle Free_Encoder_Pack.exe must match the following checksum:
 
-MD5: FF2738412567DD69F6E8D60C983B293C
-SHA1: 15B492388CC75FB98F553576B0C1B4123C198F1B
-SHA-256: 3CB1CDC5416A63C2DE99FE27D343566DC78CA91EBBB9D51FED1AD7A8B9FFA28D
+SHA-256: bb842adc9642ae44862e2494efd658d51c99d90e641462de3118198624262b94
