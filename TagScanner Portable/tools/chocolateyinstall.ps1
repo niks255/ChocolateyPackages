@@ -2,13 +2,13 @@
 
 $packageName = 'TagScanner.portable' 
 $binarypath = "$([Environment]::GetFolderPath('ApplicationData'))\\TagScanner Portable"
-$url = 'https://www.xdlab.ru/files/tagscan-6.0.34.zip' 
+$url = 'https://www.xdlab.ru/files/tagscan-6.0.35.zip' 
 
 $packageArgs = @{
   packageName   = $packageName
   UnzipLocation = $binarypath
   url           = $url
-  checksum      = 'b1f695b1d545159c69f78103a37d358f496798858d8ef1561c397f5e20107499'
+  checksum      = '5917821DE6A913F63C4412DF8E4F04553502B45CA3942CE10193A206C282D760'
   checksumType  = 'sha256'
 }
 
