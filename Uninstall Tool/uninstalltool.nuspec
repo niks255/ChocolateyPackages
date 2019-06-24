@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>uninstalltool</id>
-    <version>3.5.7.20181128</version>
+    <version>3.5.8.20190624</version>
     <title>Uninstall tool</title>
     <authors>CrystalIdea Software</authors>
     <owners>niks255</owners>
@@ -30,8 +30,11 @@ Control Panel icon, HTML reports, running different Windows tools and much more.
 
 This is a trial version, which will expire in 30 days. To continue using Uninstall tool after that you need to purchase it. Go here for more details http://www.crystalidea.com/purchase</description>
     <summary>Unique and Powerful Uninstaller</summary>
-    <releaseNotes>Install Tracker: better support of different installers (e.g. ones created with Squirrel installation framework)
-Recompiled in Visual Studio 2017 for better optimization and improved stability
+    <releaseNotes>Translations update
+Fixed calculating of occupied size for certain apps
+Fixed saving of window position when using Install Tracker via context menu #9
+Fixed missing icons for some Windows Store apps #29
+Fixed Uninstall Wizard window border missing on Windows 10
 </releaseNotes>
     <copyright>2004-2016 CrystalIdea Software</copyright>
     <tags>uninstalltool uninstall tool trial admin</tags>
