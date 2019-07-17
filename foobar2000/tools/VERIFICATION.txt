@@ -4,4 +4,4 @@ in verifying that this package's contents are trustworthy.
 
 FIle foobar2000_v1.4.2.exe must match the following checksum:
 
-SHA256: 6c3ced308c6b5617e498ca3dd4d983e844f04c44416ae023c6a8aa677613144f
+SHA256: 3cc7540135a5b85c645c07fb14b1c250e377ff38012743edd58e6a3eb8cc53de
