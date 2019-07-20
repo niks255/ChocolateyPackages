@@ -11,7 +11,7 @@ if ($key.Count -eq 1) {
       fileType    = 'exe'
       silentArgs  = '/S'
       validExitCodes= @(0)
-      file          = $key.InstallLocation + "\" + "uninstall.exe"
+      file          = $_.InstallLocation + "\" + "uninstall.exe"
     }
  
     Uninstall-ChocolateyPackage @packageArgs
