@@ -2,6 +2,6 @@
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-FIle foobar2000_v1.4.2.exe must match the following checksum:
+FIle foobar2000.exe must match the following checksum:
 
-SHA256: d27c13c1a32c596ef976b1b228fb925f0403a1d50c30ddccadbe83fcd85621c3
+SHA256: 4f7bda67beb0a0a46771767a819bd3ae01276036c1506418668ab650af08ea3d
