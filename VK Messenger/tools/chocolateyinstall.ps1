@@ -2,8 +2,8 @@
  
  
 $packageName = 'vkmessenger'
-$url = 'https://desktop.vk.me/win32/master/vk_setup.exe'
-$url64 = "https://desktop.vk.me/win64/master/vk_setup.exe"
+$url = 'https://desktop.userapi.com/win32/master/vk_setup.exe'
+$url64 = "https://desktop.userapi.com/win64/master/vk_setup.exe"
  
 $packageArgs = @{
   packageName       = $packageName
