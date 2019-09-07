@@ -1,7 +1,7 @@
-﻿VERIFICATION
+﻿`VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 FIle foobar2000.exe must match the following checksum:
 
-SHA256: 974ead776369285149c3af71fc7255f09a9804d77c399016035f792af2d86d31
+SHA256: 22d0774100fbdc21ebee227c3b99df230502a79057e4bc7a5953564b22275a54
