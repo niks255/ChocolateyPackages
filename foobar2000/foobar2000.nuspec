@@ -10,7 +10,16 @@
     <projectUrl>http://www.foobar2000.org</projectUrl>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/foobar2000.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>foobar2000 is an advanced freeware audio player for the Windows platform. Some of the basic features include full unicode support, ReplayGain support and native support for several popular audio formats.</description>
+    <description>foobar2000 is an advanced freeware audio player for the Windows platform. Some of the basic features include full unicode support, ReplayGain support and native support for several popular audio formats.
+	
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NOICON` - Remove the desktop icon
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+	</description>
     <summary>foobar2000</summary>
     <tags>foobar2000 media player admin</tags>
     <packageSourceUrl>https://github.com/niks255/ChocolateyPackages</packageSourceUrl>
