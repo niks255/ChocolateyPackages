@@ -32,7 +32,7 @@ This is a trial version, which will expire in 30 days. To continue using Uninsta
     <summary>Unique and Powerful Uninstaller</summary>
     <copyright>2004-2016 CrystalIdea Software</copyright>
     <tags>uninstalltool uninstall tool trial admin</tags>
-    <packageSourceUrl>https://chocolatey.org/packages/uninstalltool</packageSourceUrl>
+    <packageSourceUrl>https://chocolatey.org/packages/uninstalltool.portable</packageSourceUrl>
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.0.4" />
     </dependencies>
