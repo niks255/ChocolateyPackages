@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>uninstalltool</id>
-    <version>3.5.10.20200519</version>
+    <version>3.5.10</version>
     <title>Uninstall tool</title>
     <authors>CrystalIdea Software</authors>
     <owners>niks255</owners>
@@ -30,11 +30,6 @@ Control Panel icon, HTML reports, running different Windows tools and much more.
 
 This is a trial version, which will expire in 30 days. To continue using Uninstall tool after that you need to purchase it. Go here for more details http://www.crystalidea.com/purchase</description>
     <summary>Unique and Powerful Uninstaller</summary>
-    <releaseNotes>Fixed error 740 when launching Install tracker using context menu on some computers
-Fixed removal of disabled startup tasks
-Fixed rare crash when uninstalling certain apps with Uninstall Wizard
-Multiple small fixes
-</releaseNotes>
     <copyright>2004-2016 CrystalIdea Software</copyright>
     <tags>uninstalltool uninstall tool trial admin</tags>
     <packageSourceUrl>https://chocolatey.org/packages/uninstalltool</packageSourceUrl>
