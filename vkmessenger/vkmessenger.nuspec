@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vkmessenger</id>
     <version>5.2.3</version>
@@ -13,7 +13,7 @@
     <summary>VK Messenger</summary>
     <licenseUrl>https://vk.com/terms</licenseUrl>
     <tags>vk vkontakte messenger admin</tags>
-    <packageSourceUrl>https://github.com/niks255/ChocolateyPackages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/vkmessenger</packageSourceUrl>
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.0.4" />
     </dependencies>

@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>uninstalltool</id>
     <version>3.5.10</version>
@@ -32,7 +32,9 @@ This is a trial version, which will expire in 30 days. To continue using Uninsta
     <summary>Unique and Powerful Uninstaller</summary>
     <copyright>2004-2016 CrystalIdea Software</copyright>
     <tags>uninstalltool uninstall tool trial admin</tags>
-    <packageSourceUrl>https://chocolatey.org/packages/uninstalltool</packageSourceUrl>
+    <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/uninstalltool</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/crystalidea/uninstall-tool/issues</bugTrackerUrl>
+    <docsUrl>https://crystalidea.com/uninstall-tool/support</docsUrl>
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.0.4" />
     </dependencies>

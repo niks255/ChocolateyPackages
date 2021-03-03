@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>tagscanner.portable</id>
     <version>6.1.7</version>
@@ -30,6 +30,7 @@ Full support for Unicode
 Multilanguage interface
 Built-in multiformat player</description>
     <summary>TagScanner is a multifunction program for organizing and managing your music collection.</summary>
+    <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/tagscanner.portable</packageSourceUrl>
     <copyright>(c) 1999-2019 Sergey Serkov</copyright>
     <tags>tagscanner tag mp3 scanner id3</tags>
   </metadata>
