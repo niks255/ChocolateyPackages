@@ -7,7 +7,7 @@
     <authors>AdGuard Software Limited</authors>
     <owners>niks255</owners>
     <licenseUrl>https://github.com/AdguardTeam/AdGuardHome/blob/master/LICENSE.txt</licenseUrl>
-    <projectUrl>https://adguard.com/ru/adguard-home/overview.html</projectUrl>
+    <projectUrl>https://adguard.com/en/adguard-home/overview.html</projectUrl>
     <iconUrl>https://cdn.rawgit.com/niks255/ChocolateyPackages/master/adguardhome/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>AdGuard Home is a network-wide software for blocking ads and tracking. After you set it up, it'll cover ALL your home devices, and you don't need any client-side software for that.
@@ -16,7 +16,7 @@ It operates as a DNS server that re-routes tracking domains to a "black hole", t
     <docsUrl>https://github.com/AdguardTeam/AdGuardHome/wiki</docsUrl>
     <projectSourceUrl>https://github.com/AdguardTeam/AdGuardHome</projectSourceUrl>
     <bugTrackerUrl>https://github.com/AdguardTeam/AdGuardHome/issues</bugTrackerUrl>
-    <copyright>AdGuard</copyright>
+    <copyright>AdGuard, 2009–2021</copyright>
     <tags>adguard dns adblock admin</tags>
     <releaseNotes>https://github.com/AdguardTeam/AdGuardHome/blob/master/CHANGELOG.md</releaseNotes>
     <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/adguardhome</packageSourceUrl>
