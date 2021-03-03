@@ -30,7 +30,7 @@ Control Panel icon, HTML reports, running different Windows tools and much more.
 
 This is a trial version, which will expire in 30 days. To continue using Uninstall tool after that you need to purchase it. Go here for more details http://www.crystalidea.com/purchase</description>
     <summary>Unique and Powerful Uninstaller</summary>
-    <copyright>2004-2016 CrystalIdea Software</copyright>
+    <copyright>2005-2021 CrystalIDEA</copyright>
     <tags>uninstalltool uninstall tool trial admin</tags>
     <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/uninstalltool</packageSourceUrl>
     <bugTrackerUrl>https://github.com/crystalidea/uninstall-tool/issues</bugTrackerUrl>
