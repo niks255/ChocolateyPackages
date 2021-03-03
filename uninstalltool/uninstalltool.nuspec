@@ -8,7 +8,7 @@
     <owners>niks255</owners>
     <licenseUrl>https://www.crystalidea.com/eula</licenseUrl>
     <projectUrl>http://www.crystalidea.com/uninstall-tool</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/niks255/ChocolateyPackages/master/Icons/Uninstall%20tool.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/niks255/ChocolateyPackages/master/uninstalltool/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Key Features:
 Completely remove any software! (using Install Tracker (Installation Monitor) and Uninstall Wizard ™ technologies)
