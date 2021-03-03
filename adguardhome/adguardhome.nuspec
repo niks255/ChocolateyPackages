@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>adguardhome</id>
+    <version>0.105.1</version>
+    <title>AdGuard Home</title>
+    <authors>AdGuard Software Limited</authors>
+    <owners>niks255</owners>
+    <licenseUrl>https://github.com/AdguardTeam/AdGuardHome/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://adguard.com/ru/adguard-home/overview.html</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/niks255/ChocolateyPackages/master/Icons/adguard.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>AdGuard Home is a network-wide software for blocking ads and tracking. After you set it up, it'll cover ALL your home devices, and you don't need any client-side software for that.
+It operates as a DNS server that re-routes tracking domains to a "black hole", thus preventing your devices from connecting to those servers. It's based on software we use for our public AdGuard DNS servers - both share a lot of common code.</description>
+    <summary>Free and open source, powerful network-wide ads and trackers blocking DNS server.</summary>
+    <copyright>AdGuard</copyright>
+    <tags>adguard dns adblock admin</tags>
+    <packageSourceUrl>https://chocolatey.org/packages/adguardhome</packageSourceUrl>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.0.4" />
+    </dependencies>
+  </metadata>
+</package>
