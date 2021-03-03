@@ -34,6 +34,7 @@ This is a trial version, which will expire in 30 days. To continue using Uninsta
     <tags>uninstalltool uninstall tool trial admin</tags>
     <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/uninstalltool</packageSourceUrl>
     <bugTrackerUrl>https://github.com/crystalidea/uninstall-tool/issues</bugTrackerUrl>
+    <releaseNotes>https://crystalidea.com/uninstall-tool/release-notes</releaseNotes>
     <docsUrl>https://crystalidea.com/uninstall-tool/support</docsUrl>
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.0.4" />

@@ -30,6 +30,7 @@ Full support for Unicode
 Multilanguage interface
 Built-in multiformat player</description>
     <summary>TagScanner is a multifunction program for organizing and managing your music collection.</summary>
+    <releaseNotes>https://www.xdlab.ru/en/history.htm</releaseNotes>
     <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/tagscanner.portable</packageSourceUrl>
     <copyright>(c) 1999-2019 Sergey Serkov</copyright>
     <tags>tagscanner tag mp3 scanner id3</tags>
