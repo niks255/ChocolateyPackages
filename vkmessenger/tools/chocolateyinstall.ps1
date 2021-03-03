@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 
 $packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
+  packageName       = $env:ChocolateyPackageName
   fileType          = 'EXE'
   url               = 'https://desktop.userapi.com/win32/master/vk_setup.exe'
   url64bit          = 'https://desktop.userapi.com/win64/master/vk_setup.exe'

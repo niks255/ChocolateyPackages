@@ -4,8 +4,8 @@ $version  = $env:ChocolateyPackageVersion
 $binarypath = "$(Get-ToolsLocation)"
 
 $packageArgs = @{
-  packageName       = $env:ChocolateyPackageName
-  UnzipLocation     = $binarypath
+  packageName    = $env:ChocolateyPackageName
+  UnzipLocation  = $binarypath
   url            = 'https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.105.1/AdGuardHome_windows_386.zip'
   url64          = 'https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.105.1/AdGuardHome_windows_amd64.zip'
   checksum       = '40d6efaedbb5f95c257a156e8890b340a50097ed2f5cd07086a8bf271ba6a2bf'
