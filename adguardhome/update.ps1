@@ -11,6 +11,11 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_BeforeUpdate() {
+     $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
+     $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64
+}
+
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest 'https://api.github.com/repos/AdguardTeam/AdGuardHome/tags' | ConvertFrom-Json
     $tag  = $download_page.Name -NotLike "beta" | Select -First 1
@@ -22,4 +27,4 @@ function global:au_GetLatest {
     }
 }
 
-update
+update -ChecksumFor none

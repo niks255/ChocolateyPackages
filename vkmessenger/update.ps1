@@ -9,6 +9,11 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_BeforeUpdate() {
+     $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
+     $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64
+}
+
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'https://desktop.userapi.com/check_update?platform=win32&branch=master'
     $version  = $($download_page | ConvertFrom-Json).version
@@ -18,4 +23,4 @@ function global:au_GetLatest {
     }
 }
 
-update
+update -ChecksumFor none
