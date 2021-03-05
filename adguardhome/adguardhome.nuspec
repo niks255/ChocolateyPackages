@@ -24,4 +24,7 @@ It operates as a DNS server that re-routes tracking domains to a "black hole", t
       <dependency id="chocolatey-core.extension" version="1.0.4" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

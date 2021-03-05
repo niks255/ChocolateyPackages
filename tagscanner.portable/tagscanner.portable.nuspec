@@ -35,4 +35,7 @@ Built-in multiformat player</description>
     <copyright>(c) 1999-2019 Sergey Serkov</copyright>
     <tags>tagscanner tag mp3 scanner id3</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
