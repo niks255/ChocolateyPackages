@@ -16,8 +16,8 @@ function global:au_BeforeUpdate() {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://api.github.com/repos/crystalidea/uninstall-tool/releases/latest'
-    $version  = $($download_page | ConvertFrom-Json).name
+    $download_page = Invoke-WebRequest -Uri 'https://api.github.com/repos/crystalidea/uninstall-tool/releases/latest' | ConvertFrom-Json
+    $version  = $download_page | Select-Object -ExpandProperty name | Where-Object { $_.prerelease -NotMatch "true" } | Select -First 1
 
     @{
         URL32 = "https://github.com/crystalidea/uninstall-tool/releases/download/v$version/uninstalltool_setup.exe"

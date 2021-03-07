@@ -18,7 +18,7 @@ function global:au_BeforeUpdate() {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest 'https://api.github.com/repos/AdguardTeam/AdGuardHome/tags' | ConvertFrom-Json
-    $tag  = $download_page.Name -NotLike "beta" | Select -First 1
+    $tag = $download_page | Select-Object -ExpandProperty name | Where-Object { $_.prerelease -NotMatch "true" } | Select -First 1
 
     @{
         URL32 = "https://github.com/AdguardTeam/AdGuardHome/releases/download/$tag/AdGuardHome_windows_386.zip"
