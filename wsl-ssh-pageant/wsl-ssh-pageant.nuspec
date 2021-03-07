@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>wsl-ssh-pageant</id>
+    <version>20201121.2</version>
+    <title>wsl-ssh-pageant</title>
+    <authors>Ben Pye</authors>
+    <owners>niks255</owners>
+    <licenseUrl>https://github.com/benpye/wsl-ssh-pageant/blob/golang/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/benpye/wsl-ssh-pageant</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/niks255/ChocolateyPackages/master/wsl-ssh-pageant/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Pageant to TCP bridge for use with WSL, allowing for Pageant to be used as an ssh-ageant within the WSL environment.</description>
+    <summary>A Pageant to TCP bridge for use with WSL</summary>
+    <copyright>Copyright 2019 Ben Pye and contributors</copyright>
+    <tags>wsl pageant ssh</tags>
+    <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/wsl-ssh-pageant</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/benpye/wsl-ssh-pageant/issues</bugTrackerUrl>
+    <releaseNotes>https://github.com/benpye/wsl-ssh-pageant/releases</releaseNotes>
+    <projectSourceUrl>https://github.com/benpye/wsl-ssh-pageant</projectSourceUrl>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.0.4" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
