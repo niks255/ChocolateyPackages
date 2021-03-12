@@ -13,10 +13,10 @@
     <description>A Pageant to TCP bridge for use with WSL, allowing for Pageant to be used as an ssh-ageant within the WSL environment.
 
 The difference between the gui.exe binary and the regular binaries is the subsystem as set in the PE header. 
-The gui.exe binary is set with the Win32 subsystem so that it doesn't spawn a command line, allowing it to be launched on startup. 
-The regular binary has the console subsystem so it does launch a command line if double clicked, and will block the command line as expected.
+- The gui.exe binary is set with the Win32 subsystem so that it doesn't spawn a command line, allowing it to be launched on startup. 
+- The regular binary has the console subsystem so it does launch a command line if double clicked, and will block the command line as expected.
 
-Note: You may launch either binary with the -systray flag to have a systray icon whilst the tool is running, this only provides a way to quit the application.
+**Note:** You may launch either binary with the -systray flag to have a systray icon whilst the tool is running, this only provides a way to quit the application.
 </description>
     <summary>A Pageant to TCP bridge for use with WSL</summary>
     <copyright>Copyright 2019 Ben Pye and contributors</copyright>
