@@ -21,7 +21,7 @@ The difference between the gui.exe binary and the regular binaries is the subsys
     <summary>A Pageant to TCP bridge for use with WSL</summary>
     <copyright>Copyright 2019 Ben Pye and contributors</copyright>
     <tags>wsl pageant ssh</tags>
-    <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/wsl-ssh-pageant</packageSourceUrl>
+    <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/wsl-ssh-pageant-gui</packageSourceUrl>
     <bugTrackerUrl>https://github.com/benpye/wsl-ssh-pageant/issues</bugTrackerUrl>
     <releaseNotes>https://github.com/benpye/wsl-ssh-pageant/releases</releaseNotes>
     <projectSourceUrl>https://github.com/benpye/wsl-ssh-pageant</projectSourceUrl>
