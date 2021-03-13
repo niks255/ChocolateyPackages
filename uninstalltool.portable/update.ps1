@@ -16,12 +16,14 @@ function global:au_BeforeUpdate() {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://api.github.com/repos/crystalidea/uninstall-tool/releases/latest' | ConvertFrom-Json
-    $version  = $download_page | Select-Object -ExpandProperty name | Where-Object { $_.prerelease -NotMatch "true" } | Select -First 1
+    $releases = 'https://api.github.com/repos/crystalidea/uninstall-tool/releases'
+    $download_page = Invoke-WebRequest $releases | ConvertFrom-Json
+    $tag = $download_page | Where prerelease -NotMatch 'true' | Select -ExpandProperty tag_name -First 1
+    $links = $(Invoke-WebRequest "$releases/tags/$tag" | ConvertFrom-Json).assets
 
     @{
-        URL32 = "https://github.com/crystalidea/uninstall-tool/releases/download/v$version/uninstalltool_portable.zip"
-        Version = $version
+        URL32 = $($links -match 'portable').browser_download_url
+        Version = $tag -replace 'v'
     }
 }
 

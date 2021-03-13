@@ -17,9 +17,10 @@ function global:au_BeforeUpdate() {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest 'https://api.github.com/repos/librespeed/speedtest-cli/tags' | ConvertFrom-Json
-    $tag = $download_page | Select-Object -ExpandProperty name | Where-Object { $_.prerelease -NotMatch "true" } | Select -First 1
-    $links = $(Invoke-WebRequest "https://api.github.com/repos/librespeed/speedtest-cli/releases/tags/$tag" | ConvertFrom-Json).assets
+    $releases = 'https://api.github.com/repos/librespeed/speedtest-cli/releases'
+    $download_page = Invoke-WebRequest $releases | ConvertFrom-Json
+    $tag = $download_page | Where prerelease -NotMatch 'true' | Select -ExpandProperty tag_name -First 1
+    $links = $(Invoke-WebRequest "$releases/tags/$tag" | ConvertFrom-Json).assets
 
     @{
         URL32 = $($links -match 'windows_386').browser_download_url

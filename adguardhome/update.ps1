@@ -17,12 +17,14 @@ function global:au_BeforeUpdate() {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest 'https://api.github.com/repos/AdguardTeam/AdGuardHome/tags' | ConvertFrom-Json
-    $tag = $download_page | Select-Object -ExpandProperty name | Where-Object { $_.prerelease -NotMatch "true" } | Select -First 1
+    $releases = 'https://api.github.com/repos/AdguardTeam/AdGuardHome/releases'
+    $download_page = Invoke-WebRequest $releases | ConvertFrom-Json
+    $tag = $download_page | Where prerelease -NotMatch 'true' | Select -ExpandProperty tag_name -First 1
+    $links = $(Invoke-WebRequest "$releases/tags/$tag" | ConvertFrom-Json).assets
 
     @{
-        URL32 = "https://github.com/AdguardTeam/AdGuardHome/releases/download/$tag/AdGuardHome_windows_386.zip"
-        URL64 = "https://github.com/AdguardTeam/AdGuardHome/releases/download/$tag/AdGuardHome_windows_amd64.zip"
+        URL32 = $($links -match 'windows_386').browser_download_url
+        URL64 = $($links -match 'windows_amd64').browser_download_url
         Version = $tag -replace 'v'
     }
 }
