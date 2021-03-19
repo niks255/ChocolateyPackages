@@ -6,7 +6,7 @@
     <title>VK Messenger</title>
     <authors>V Kontakte LLC</authors>
     <owners>niks255</owners>
-    <iconUrl>https://cdn.rawgit.com/niks255/ChocolateyPackages/master/vkmessenger/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/niks255/ChocolateyPackages/master/vkmessenger/icon.png</iconUrl>
     <projectUrl>https://vk.com/landings/desktop_messenger</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Simple and Convenient Messaging App for VK.</description>
