@@ -11,6 +11,7 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate() {
      $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
+     Get-Item *.nupkg | Remove-Item
 }
 
 function global:au_GetLatest {
