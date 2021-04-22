@@ -6,10 +6,10 @@ $binarypath = "$([Environment]::GetFolderPath('ApplicationData'))\\TagScanner Po
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   UnzipLocation  = $binarypath
-  url            = 'https://www.xdlab.ru/files/tagscan-6.1.7.zip'
-  url64          = 'https://www.xdlab.ru/files/tagscan-6.1.7_x64.zip'
-  checksum       = '44d11db39e31a0729880b6bcd468e38443e62bd6f1385dbcacddfe0cd8a1c3ba'
-  checksum64     = '070d4bfa4ecb8b2f0cdc24c08b7a10c09d77d198ff8cb5a2e216c3da46cf64b6'
+  url            = 'https://www.xdlab.ru/files/tagscan-6.1.8.zip'
+  url64          = 'https://www.xdlab.ru/files/tagscan-6.1.8_x64.zip'
+  checksum       = 'eb2bc3d4c68208b9bcd36f924ff7a9b6f13427d3903733ad9e42b694c21257b9'
+  checksum64     = 'a62b770315afca7ee8aaad6933f4c42cd02f9350db25240222f3006333ce956c'
   checksumtype   = 'sha256'
   checksumtype64 = $checksumtype
 }
