@@ -1,4 +1,4 @@
-import-module au
+. $(Join-Path -Path "$(Split-Path -parent $PSScriptRoot)" -ChildPath 'common.ps1')
 
 function global:au_SearchReplace {
    @{
@@ -12,7 +12,6 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate() {
      $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
      $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64
-     Get-Item *.nupkg | Remove-Item
 }
 
 function global:au_GetLatest {

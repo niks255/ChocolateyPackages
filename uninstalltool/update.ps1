@@ -1,4 +1,4 @@
-import-module au
+. $(Join-Path -Path "$(Split-Path -parent $PSScriptRoot)" -ChildPath 'common.ps1')
 
 function global:au_SearchReplace {
    @{
@@ -11,14 +11,10 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate() {
      $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
-     Get-Item *.nupkg | Remove-Item
 }
 
 function global:au_GetLatest {
-    $releases = 'https://api.github.com/repos/crystalidea/uninstall-tool/releases'
-    $download_page = Invoke-WebRequest $releases | ConvertFrom-Json
-    $tag = $download_page | Where prerelease -NotMatch 'true' | Select -ExpandProperty tag_name -First 1
-    $links = $(Invoke-WebRequest "$releases/tags/$tag" | ConvertFrom-Json).assets
+    Get-GithubRepoInfo -User 'crystalidea' -Repo 'uninstall-tool'
 
     @{
         URL32 = $($links -match 'setup').browser_download_url
