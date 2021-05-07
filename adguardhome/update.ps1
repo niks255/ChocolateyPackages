@@ -1,18 +1,19 @@
 . $(Join-Path -Path "$(Split-Path -parent $PSScriptRoot)" -ChildPath 'common.ps1')
 
 function global:au_SearchReplace {
-    @{
-        ".\legal\VERIFICATION.txt" = @{
-          "(?i)(\s+x32:).*"        = "`${1} $($Latest.URL32)"
-          "(?i)(\s+x64:).*"        = "`${1} $($Latest.URL64)"
-          "(?i)(checksum32:).*"    = "`${1} $($Latest.Checksum32)"
-          "(?i)(checksum64:).*"    = "`${1} $($Latest.Checksum64)"
+   @{
+        ".\tools\chocolateyInstall.ps1" = @{
+            "(?i)(^\s*url\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
+            "(?i)(^\s*url64\s*=\s*)('.*')"     = "`$1'$($Latest.URL64)'"
+            "(?i)(^\s*checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
+            "(?i)(^\s*checksum64\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum64)'"
         }
     }
 }
 
-function global:au_BeforeUpdate { 
-    Get-RemoteFiles -Purge -FileNameBase "$($Latest.PackageName)"
+function global:au_BeforeUpdate() {
+     $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
+     $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64
 }
 
 function global:au_GetLatest {
