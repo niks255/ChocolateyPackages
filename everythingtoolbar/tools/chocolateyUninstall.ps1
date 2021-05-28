@@ -1,15 +1,15 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop'
 
-$key = Get-UninstallRegistryKey -SoftwareName 'Uninstall Tool*'
+$key = Get-UninstallRegistryKey -SoftwareName 'EverythingToolbar*'
 
 if ($key.Count -eq 1) {
     $key | ForEach-Object {
         $args = @{
           packageName    = $env:ChocolateyPackageName
-          installerType  = 'exe'
-          silentArgs     = "/SILENT"
-          File           = $key.UninstallString
-          validExitCodes = @(0)
+          installerType  = 'msi'
+          silentArgs     = "$($_.PSChildName) $silentArgs"
+          File           = ''
+          validExitCodes = @(0, 3010, 1605, 1614, 1641)
         }
 
         Uninstall-ChocolateyPackage @args

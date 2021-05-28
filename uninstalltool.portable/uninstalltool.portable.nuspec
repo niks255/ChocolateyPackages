@@ -36,9 +36,6 @@ This is a trial version, which will expire in 30 days. To continue using Uninsta
     <bugTrackerUrl>https://github.com/crystalidea/uninstall-tool/issues</bugTrackerUrl>
     <releaseNotes>https://crystalidea.com/uninstall-tool/release-notes</releaseNotes>
     <docsUrl>https://crystalidea.com/uninstall-tool/support</docsUrl>
-    <dependencies>
-      <dependency id="chocolatey-core.extension" version="1.0.4" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

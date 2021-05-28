@@ -1,8 +1,7 @@
-﻿$ErrorActionPreference = 'Stop';
-$binarypath = "$([Environment]::GetFolderPath('ApplicationData'))\\TagScanner Portable"
+﻿$ErrorActionPreference = 'Stop'
 
 try {
-    Remove-Item $binarypath -recurse
+    Remove-Item "$([Environment]::GetFolderPath('ApplicationData'))\\TagScanner Portable" -recurse
 } catch {
     Write-host("Package folder has already been removed by other means, skipping...")
 }

@@ -15,7 +15,7 @@
     <tags>vk vkontakte messenger admin</tags>
     <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/vkmessenger</packageSourceUrl>
     <dependencies>
-      <dependency id="chocolatey-core.extension" version="1.0.4" />
+      <dependency id="chocolatey-core.extension" version="1.3.4" />
     </dependencies>
   </metadata>
   <files>

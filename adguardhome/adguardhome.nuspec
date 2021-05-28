@@ -21,7 +21,7 @@ It operates as a DNS server that re-routes tracking domains to a "black hole", t
     <releaseNotes>https://github.com/AdguardTeam/AdGuardHome/blob/master/CHANGELOG.md</releaseNotes>
     <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/adguardhome</packageSourceUrl>
     <dependencies>
-      <dependency id="chocolatey-core.extension" version="1.0.4" />
+      <dependency id="chocolatey-core.extension" version="1.3.4" />
     </dependencies>
   </metadata>
   <files>

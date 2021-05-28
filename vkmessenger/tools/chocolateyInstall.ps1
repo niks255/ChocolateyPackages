@@ -9,13 +9,9 @@ $packageArgs = @{
   checksum64        = 'ea8ee086acf14efbe45da576f7ad8ad66236f277dcc79f83f2ceafc1fb10e58e'
   checksumType      = 'sha256'
   checksumType64    = 'sha256'
-  silentArgs        = "/VERYSILENT /NORESTART /SP- /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS"
+  silentArgs        = '/VERYSILENT /NORESTART /SP- /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS'
   validExitCodes= @(0)
 }
 
-$process = 'VK'
-if((Get-Process $process -ea SilentlyContinue) -ne $Null){ 
-    Stop-Process -processname $process
- }
-
+Remove-Process -NameFilter 'VK' -PathFilter 'VK'
 Install-ChocolateyPackage @packageArgs

@@ -1,3 +1,3 @@
-﻿$ErrorActionPreference = 'SilentlyContinue';
+﻿$ErrorActionPreference = 'Stop';
 
-Get-Process -Name 'wsl-ssh-pageant-gui' | Stop-Process -Force
+Remove-Process -NameFilter 'wsl-ssh-pageant-gui'

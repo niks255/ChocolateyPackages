@@ -30,9 +30,6 @@ Features
     <tags>speedtest librespeed</tags>
     <releaseNotes>https://github.com/librespeed/speedtest-cli/releases</releaseNotes>
     <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/librespeed-cli</packageSourceUrl>
-    <dependencies>
-      <dependency id="chocolatey-core.extension" version="1.0.4" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
