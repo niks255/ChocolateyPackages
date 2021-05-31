@@ -11,6 +11,6 @@ $packageArgs = @{
     checksumtype64 = 'sha256'
 }
 
-Remove-Process -NameFilter 'AdGuardHome' -PathFilter 'AdGuardHome'
+Remove-Process -NameFilter 'AdGuardHome' -PathFilter 'AdGuardHome' | Out-Null
 Install-ChocolateyZipPackage @packageArgs
 Install-BinFile -Name 'adguardhome' -Path "$(Get-ToolsLocation)\\AdGuardHome\\AdGuardHome.exe"

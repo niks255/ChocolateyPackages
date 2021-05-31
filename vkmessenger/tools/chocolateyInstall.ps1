@@ -13,5 +13,5 @@ $packageArgs = @{
   validExitCodes= @(0)
 }
 
-Remove-Process -NameFilter 'VK' -PathFilter 'VK'
+Remove-Process -NameFilter 'VK' -PathFilter 'VK' | Out-Null
 Install-ChocolateyPackage @packageArgs

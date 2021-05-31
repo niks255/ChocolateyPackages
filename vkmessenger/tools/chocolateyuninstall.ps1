@@ -12,6 +12,7 @@ if ($key.Count -eq 1) {
           validExitCodes = @(0)
         }
 
+        Remove-Process -NameFilter 'VK' -PathFilter 'VK' | Out-Null
         Uninstall-ChocolateyPackage @args
     }
 } elseif ($key.Count -eq 0) {

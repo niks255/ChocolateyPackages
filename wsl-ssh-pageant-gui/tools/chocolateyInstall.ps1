@@ -11,5 +11,5 @@ $packageArgs = @{
   checksumType64 = 'sha256'
 }
 
-Remove-Process -NameFilter 'wsl-ssh-pageant-gui'
+Remove-Process -NameFilter 'wsl-ssh-pageant-gui' | Out-Null
 Get-ChocolateyWebFile @packageArgs
