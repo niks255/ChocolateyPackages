@@ -12,7 +12,7 @@ $Options = [ordered]@{
     Threads       = 1                                       #Number of background jobs to use
     Push          = $Env:au_Push -eq 'true'                 #Push to chocolatey
     PushAll       = $true                                   #Allow to push multiple packages at once
-    PluginPath    = ''                                      #Path to user plugins
+    PluginPath    = '.plugins'                              #Path to user plugins
     IgnoreOn      = @(                                      #Error message parts to set the package ignore status
       'Could not create SSL/TLS secure channel'
       'Could not establish trust relationship'
@@ -55,41 +55,18 @@ $Options = [ordered]@{
         Path = "$PSScriptRoot\Update-History.md"            #Path where to save history
     }
 
-    Gist = @{
-        Id     = $Env:gist_id                               #Your gist id; leave empty for new private or anonymous gist
-        ApiKey = $Env:github_api_key                        #Your github api key - if empty anoymous gist is created
-        Path   = "$PSScriptRoot\Update-AUPackages.md", "$PSScriptRoot\Update-History.md"       #List of files to add to the gist
-    }
-
-    Git = @{
-        User     = ''                                       #Git username, leave empty if github api key is used
-        Password = $Env:github_api_key                      #Password if username is not empty, otherwise api key
-    }
-
-    GitReleases  = @{
-        ApiToken    = $Env:github_api_key                   #Your github api key
-        ReleaseType = 'package'                             #Either 1 release per date, or 1 release per package
-    }
-
     RunInfo = @{
         Exclude = 'password', 'apikey', 'apitoken'          #Option keys which contain those words will be removed
         Path    = "$PSScriptRoot\update_info.xml"           #Path where to save the run info
     }
-
-    Mail = if ($Env:mail_user) {
-            @{
-                To         = $Env:mail_user
-                From       = $Env:mail_from
-                Server     = $Env:mail_server
-                UserName   = $Env:mail_user
-                Password   = $Env:mail_pass
-                Port       = $Env:mail_port
-                EnableSsl  = $Env:mail_enablessl -eq 'true'
-                Attachment = "$PSScriptRoot\update_info.xml"
-                UserMessage = ''
-                SendAlways  = $false                        #Send notifications every time
-             }
-           } else {}
+    
+    Telegram = @{
+        token      = $Env:tg_token
+        chat_id    = $Env:tg_chat_id
+        markdown   = $Env:tg_markdown
+        nopreview  = $Env:tg_nopreview
+        SendAlways = $true
+    }
 
     ForcedPackages = $ForcedPackages -split ' '
     BeforeEach = {
