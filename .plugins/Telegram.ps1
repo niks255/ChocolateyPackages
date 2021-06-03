@@ -16,13 +16,17 @@ if ($Chat_id -eq '') {
     Return
 }
 
-if ($Info.error_count.total -gt 0 -Or $SendAlways) {
-    $errors_word = if ($Info.error_count.total -eq 1) { 'error' } else { 'errors' }
-    $text = if ($info.error_count.total -eq 0) { 
-        "AU: run was OK"
-    } else {
-        "AU: $($info.error_count.total) $errors_word during update"
-    }
+$updated   = @($Info.result.updated).Count
+$pushed = @($Info.result.pushed).Count
+
+if ($Info.error_count.total -gt 0 -Or $updated -gt 0 -Or `
+                                $pushed -gt 0 -Or $SendAlways) {
+    $errors_word = if ($Info.error_count.total -eq 1) { 
+                       'error' } else { 'errors' }
+
+    $text = "AU: $($info.error_count.total) $errors_word, " + `
+            "$($updated) updated, " + `
+            "$($pushed) pushed"
 
     $payload = @{
         "chat_id" = $chat_id;
