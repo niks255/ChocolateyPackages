@@ -65,7 +65,7 @@ $Options = [ordered]@{
         chat_id    = $Env:tg_chat_id
         markdown   = $Env:tg_markdown
         nopreview  = $Env:tg_nopreview
-        SendAlways = $true
+        SendAlways = $false
     }
 
     ForcedPackages = $ForcedPackages -split ' '
