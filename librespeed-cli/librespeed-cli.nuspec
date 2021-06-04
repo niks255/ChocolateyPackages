@@ -21,7 +21,11 @@ Features
 - Result sharing (telemetry) [optional]
 - Test with multiple servers in a single run
 - Use your own server list or telemetry endpoints
-- Tested with PHP and Go backends</description>
+- Tested with PHP and Go backends
+
+NOTE: Some antivirus software may flag this program as a malware. It is a false positive. 
+This is a known issue https://github.com/librespeed/speedtest-cli/issues/29 
+</description>
     <summary>Command line client for LibreSpeed.</summary>
     <projectUrl>https://github.com/librespeed/speedtest-cli</projectUrl>
     <projectSourceUrl>https://github.com/librespeed/speedtest-cli</projectSourceUrl>
