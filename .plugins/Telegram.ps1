@@ -16,8 +16,8 @@ if ($Chat_id -eq '') {
     Return
 }
 
-$updated   = @($Info.result.updated).Count
-$pushed = @($Info.result.pushed).Count
+$updated = @($Info.result.updated).Count
+$pushed  = @($Info.result.pushed).Count
 
 if ($Info.error_count.total -gt 0 -Or $updated -gt 0 -Or `
                                 $pushed -gt 0 -Or $SendAlways) {
