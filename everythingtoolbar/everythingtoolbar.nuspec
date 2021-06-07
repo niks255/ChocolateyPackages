@@ -24,7 +24,6 @@ Features
     <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/everythingtoolbar</packageSourceUrl>
     <bugTrackerUrl>https://github.com/stnkl/EverythingToolbar/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="chocolatey-core.extension" version="1.1.0" />
       <dependency id="everything" version="1.4.1" />
       <dependency id="netfx-4.8" version="4.8.0" />
     </dependencies>
