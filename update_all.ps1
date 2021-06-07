@@ -38,7 +38,7 @@ $Options = [ordered]@{
 
     Report = @{
         Type = 'markdown'                                   #Report type: markdown or text
-        Path = "$PSScriptRoot\Update-AUPackages.md"         #Path where to save the report
+        Path = "$(Join-Path -Path $PSScriptRoot -ChildPath Update-AUPackages.md)"         #Path where to save the report
         Params= @{                                          #Report parameters:
             Github_UserRepo = $Env:github_user_repo         #  Markdown: shows user info in upper right corner
             NoAppVeyor  = $false                            #  Markdown: do not show AppVeyor build shield
@@ -52,12 +52,12 @@ $Options = [ordered]@{
     History = @{
         Lines = 120                                         #Number of lines to show
         Github_UserRepo = $Env:github_user_repo             #User repo to be link to commits
-        Path = "$PSScriptRoot\Update-History.md"            #Path where to save history
+        Path = "$(Join-Path -Path $PSScriptRoot -ChildPath Update-History.md)"            #Path where to save history
     }
 
     RunInfo = @{
         Exclude = 'password', 'apikey', 'apitoken'          #Option keys which contain those words will be removed
-        Path    = "$PSScriptRoot\update_info.xml"           #Path where to save the run info
+        Path    = "$(Join-Path -Path $PSScriptRoot -ChildPath update_info.xml)"           #Path where to save the run info
     }
 
     Git = @{

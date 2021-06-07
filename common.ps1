@@ -1,5 +1,4 @@
-$ScriptRoot = Split-Path $MyInvocation.MyCommand.Definition
-$AuDir = Join-Path -Path "$ScriptRoot" -ChildPath '.au'
+$AuDir = Join-Path -Path "$PSScriptRoot" -ChildPath '.au'
 import-module "$(Join-Path -Path $AuDir -ChildPath AU.psm1)"
 
 Get-Item *.nupkg | Remove-Item
