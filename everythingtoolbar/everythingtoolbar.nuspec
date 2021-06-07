@@ -23,6 +23,7 @@ Features
     <tags>everything search admin</tags>
     <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/everythingtoolbar</packageSourceUrl>
     <bugTrackerUrl>https://github.com/stnkl/EverythingToolbar/issues</bugTrackerUrl>
+    <releaseNotes>https://github.com/stnkl/EverythingToolbar/releases</releaseNotes>
     <dependencies>
       <dependency id="everything" version="1.4.1" />
       <dependency id="netfx-4.8" version="4.8.0" />
