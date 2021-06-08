@@ -2,6 +2,9 @@
 
 param([string[]] $Name, [string] $ForcedPackages, [string] $Root = $PSScriptRoot)
 
+$AuDir = Join-Path -Path "$PSScriptRoot" -ChildPath '.au'
+import-module "$(Join-Path -Path $AuDir -ChildPath AU.psm1)"
+
 $UpdateVars = Join-Path -Path "$PSScriptRoot" -ChildPath 'update_vars.ps1'
 if (Test-Path "$UpdateVars") { . "$UpdateVars" }
 
