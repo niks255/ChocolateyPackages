@@ -11,11 +11,6 @@ function global:au_SearchReplace {
     }
 }
 
-function global:au_BeforeUpdate() {
-     $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
-     $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64
-}
-
 function global:au_GetLatest {
     Get-GithubRepoInfo -User 'AdguardTeam' -Repo 'AdGuardHome'
 
