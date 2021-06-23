@@ -14,8 +14,10 @@ function global:au_GetLatest {
     $version  = $($download_page | ConvertFrom-Json).version
 
     @{
+    	URL32 = 'https://desktop.userapi.com/win32/master/vk_setup.exe'
+        URL64 = 'https://desktop.userapi.com/win64/master/vk_setup.exe'
         Version = $version
     }
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckChocoVersion

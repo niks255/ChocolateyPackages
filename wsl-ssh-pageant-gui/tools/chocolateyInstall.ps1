@@ -2,7 +2,7 @@
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  FileFullPath   = "$ScriptRoot\wsl-ssh-pageant-gui.exe"
+  FileFullPath   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\wsl-ssh-pageant-gui.exe"
   url            = 'https://github.com/benpye/wsl-ssh-pageant/releases/download/20201121.2/wsl-ssh-pageant-386-gui.exe'
   url64          = 'https://github.com/benpye/wsl-ssh-pageant/releases/download/20201121.2/wsl-ssh-pageant-amd64-gui.exe'
   checksum       = '42156c97a60d30dee420efe5b2c353d8ac57ad88a08708abbead73745a7fd1b3'
