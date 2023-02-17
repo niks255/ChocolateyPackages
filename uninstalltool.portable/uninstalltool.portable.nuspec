@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>uninstalltool.portable</id>
+    <version>3.7.2</version>
+    <title>Uninstall Tool (Portable)</title>
+    <authors>CrystalIdea Software</authors>
+    <owners>niks255</owners>
+    <licenseUrl>https://www.crystalidea.com/eula</licenseUrl>
+    <projectUrl>http://www.crystalidea.com/uninstall-tool</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/niks255/ChocolateyPackages/master/uninstalltool/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Key Features:
+- Completely remove any software! (using Install Tracker (Installation Monitor) and Uninstall Wizard ™ technologies)
+- 3 Times Faster than standard removal program
+- Uninstall System and Hidden programs
+- Add/Remove Programs that automatically run at system startup
+- Portable Mode: run from USB flash drive
+- Uninstall Programs that could not be removed by Add/Remove program.
+- Force removal of uninstall related registry and file system items
+- Smart Search ™ allows quick finding of any application you need.
+- Native X64 version for 64-bit versions of Windows (single setup)
+- Batch Removal operations
+- Highlighting of recently installed applications in the list
+- Navigate to a selected program's Registry Entry, Installation Folder and its Web Site.
+- View Detailed Information of a certain application installed on your computer.
+- Easy to use and modern User Interface allows to work comfortably with Uninstall Tool.
+- Multilingual interface with native support of 35 languages
+- Control Panel icon, HTML reports, running different Windows tools and much more... 
+
+This is a trial version, which will expire in 30 days. To continue using Uninstall tool after that you need to purchase it. Go here for more details http://www.crystalidea.com/purchase</description>
+    <summary>Unique and Powerful Uninstaller</summary>
+    <copyright>2005-2021 CrystalIDEA</copyright>
+    <tags>uninstalltool uninstall tool trial admin</tags>
+    <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/uninstalltool.portable</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/crystalidea/uninstall-tool/issues</bugTrackerUrl>
+    <releaseNotes>https://crystalidea.com/uninstall-tool/release-notes</releaseNotes>
+    <docsUrl>https://crystalidea.com/uninstall-tool/support</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

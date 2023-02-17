@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>wsl-ssh-pageant</id>
+    <version>20201121.2</version>
+    <title>wsl-ssh-pageant (CLI)</title>
+    <authors>Ben Pye</authors>
+    <owners>niks255</owners>
+    <licenseUrl>https://github.com/benpye/wsl-ssh-pageant/blob/golang/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/benpye/wsl-ssh-pageant</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/niks255/ChocolateyPackages/master/wsl-ssh-pageant/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Pageant to TCP bridge for use with WSL, allowing for Pageant to be used as an ssh-ageant within the WSL environment.
+
+The difference between the gui.exe binary and the regular binaries is the subsystem as set in the PE header. 
+- The gui.exe binary is set with the Win32 subsystem so that it doesn't spawn a command line, allowing it to be launched on startup. 
+- The regular binary has the console subsystem so it does launch a command line if double clicked, and will block the command line as expected.
+
+**Note:** You may launch either binary with the -systray flag to have a systray icon whilst the tool is running, this only provides a way to quit the application.
+</description>
+    <summary>A Pageant to TCP bridge for use with WSL</summary>
+    <copyright>Copyright 2019 Ben Pye and contributors</copyright>
+    <tags>wsl pageant ssh</tags>
+    <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/wsl-ssh-pageant</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/benpye/wsl-ssh-pageant/issues</bugTrackerUrl>
+    <releaseNotes>https://github.com/benpye/wsl-ssh-pageant/releases</releaseNotes>
+    <projectSourceUrl>https://github.com/benpye/wsl-ssh-pageant</projectSourceUrl>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.3.4" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
