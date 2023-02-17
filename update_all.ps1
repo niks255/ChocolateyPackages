@@ -48,6 +48,12 @@ $Options = [ordered]@{
         }
     }
 
+    Git = @{
+        User     = ''
+        Password = $Env:github_api_key
+        Branch   = 'master'
+    }
+
     ntfy = @{
         Title      = 'Community Repository'
         Topic      = $Env:ntfy_topic

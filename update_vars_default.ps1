@@ -13,3 +13,5 @@ $Env:api_key         = ''
 
 $Env:GithubUsername  = ''
 $Env:GithubToken     = ''
+
+$Env:github_api_key  = ''
