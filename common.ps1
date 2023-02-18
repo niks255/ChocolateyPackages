@@ -39,21 +39,6 @@ function CustDownload {
     }
 }
 
-function global:choco {
-    if ($isLinux) {
-        if ($env:ChocolateyInstall) {
-            New-Item "$env:ChocolateyInstall/lib" -ItemType Directory -Force | Out-Null
-            & mono "$env:ChocolateyInstall/choco.exe" $args --allow-unofficial;
-        } else {
-            Throw "ChocolateyInstall environment variable is not set";
-        }
-    }
-    
-    if ($isWindows) {
-        & "$env:ChocolateyInstall/choco.exe" $args;
-    }
-}
-
 function global:Get-WebdavPage {
     Param (
          [Parameter(Mandatory=$true, Position=0)]

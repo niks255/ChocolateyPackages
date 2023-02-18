@@ -15,3 +15,5 @@ $Env:GithubUsername  = ''
 $Env:GithubToken     = ''
 
 $Env:github_api_key  = ''
+
+$Env:ChocolateyInstall = ''

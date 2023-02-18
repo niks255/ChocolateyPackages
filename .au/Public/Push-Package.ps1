@@ -26,9 +26,9 @@ function Push-Package() {
     $packages = Get-ChildItem *.nupkg | Sort-Object -Property CreationTime -Descending
     if (!$All) { $packages = $packages | Select-Object -First 1 }
     if (!$packages) { throw 'There is no nupkg file in the directory'}
-    if ($api_key) {
-        $packages | ForEach-Object { choco push $_.FullName.Trim() --api-key $api_key --source $push_url $force_push }
-    } else {
-        $packages | ForEach-Object { choco push $_.FullName.Trim() --source $push_url $force_push }
+    if ($api_key) { $api_key = "--api-key $api_key" }
+    foreach ($package in $packages) {
+        $command = "choco push $api_key --source $push_url $force_push $package"
+        Invoke-Expression -Command $command
     }
 }

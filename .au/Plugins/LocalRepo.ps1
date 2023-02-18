@@ -9,16 +9,14 @@ if ($RepoPath -eq '') {
 }
 
 if (Test-Path -Path "$RepoPath") {
-    $packages = Get-Item "$(Split-Path -parent $PSScriptRoot)/*.local";
+    $packages = Get-ChildItem -Recurse "${global:au_Root}" -Filter '*.nupkg';
 
     foreach ($package in $packages) {
-        $newpkg = Get-Item "$package/*.nupkg"
-        if ($newpkg) {
-            if ($RemoveOld) {
-                Get-Item "$RepoPath/*.nupkg" | Where-Object -Property Name -Like "$($package.Name)*" | Remove-Item;
-            }
-            Move-Item "$newpkg" "$RepoPath/";
+        $PackageName = $package.Name -replace '.local.*.nupkg','.local'
+        if ($RemoveOld) {
+            Get-ChildItem "$RepoPath" -Filter "${PackageName}.*.nupkg" | Remove-Item -Force
         }
+        Move-Item $package.FullName "${RepoPath}/";
     }
 } else {
     Write-Host "Repository path doesn't exist, skipping..."
