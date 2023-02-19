@@ -88,7 +88,8 @@ function Update-AUPackages {
 
     Remove-Job * -force #remove any previously run jobs
 
-    $tmp_dir = ([System.IO.Path]::Combine([System.IO.Path]::GetTempPath(), "chocolatey", "au"))
+    $tmp_dir = if ($Env:au_tempdir) { $Env:au_tempdir } else {
+               ([System.IO.Path]::Combine([System.IO.Path]::GetTempPath(), "chocolatey", "au")) }
     New-Item -Type Directory  -ea 0 $tmp_dir | Out-Null
     Get-ChildItem $tmp_dir | Where-Object PSIsContainer -eq $false | Remove-Item   #clear tmp dir files
 

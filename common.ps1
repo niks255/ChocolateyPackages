@@ -21,7 +21,7 @@ function CustDownload {
          [string] $ExtractPath
     )
 
-    $TempFile = [System.IO.Path]::GetTempFileName()
+    $TempFile = Get-TempFile
     $downloader = New-Object System.Net.WebClient
     $downloader.Headers['User-Agent'] = $UserAgent
 
@@ -48,6 +48,15 @@ function global:Get-WebdavPage {
     $global:page = "${Env:webdav_page}/$([System.Web.HttpUtility]::UrlEncode($location))"
 }
 
+function Get-TempFile {
+    $TempFile = [System.IO.Path]::GetTempFileName()
+    if ($Env:au_tempdir) {
+        $Name = (Get-Item $TempFile).Name
+        $TempFile = Join-Path -Path $Env:au_tempdir -ChildPath $Name
+    }
+    $TempFile
+}
+
 function global:Get-GithubRepoInfo {
     Param (
          [Parameter(Mandatory=$true, Position=0)]
@@ -71,7 +80,7 @@ function global:Get-ExeFileVersion {
         [string]$Referer = 'none'
     )
 
-    $TempFile = [System.IO.Path]::GetTempFileName()
+    $TempFile = Get-TempFile
     $downloader = New-Object System.Net.WebClient
     $downloader.Headers['User-Agent'] = $UserAgent;
 
