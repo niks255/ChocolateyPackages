@@ -3,6 +3,7 @@
 *.zip
 *.7z
 *.msi
+*.ignore
 update_vars.ps1
 Update-AUPackages.md
 Update-History.md
