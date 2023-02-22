@@ -51,7 +51,9 @@ function global:Get-WebdavPage {
 function Get-TempFile {
     $TempFile = [System.IO.Path]::GetTempFileName()
     if ($Env:au_tempdir) {
+        New-Item -ItemType Directory -Path $Env:au_tempdir -Force | Out-Null
         $Name = (Get-Item $TempFile).Name
+        Remove-Item -Force $TempFile
         $TempFile = Join-Path -Path $Env:au_tempdir -ChildPath $Name
     }
     $TempFile

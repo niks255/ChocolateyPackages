@@ -90,7 +90,7 @@ function Update-AUPackages {
 
     $tmp_dir = if ($Env:au_tempdir) { $Env:au_tempdir } else {
                ([System.IO.Path]::Combine([System.IO.Path]::GetTempPath(), "chocolatey", "au")) }
-    New-Item -Type Directory  -ea 0 $tmp_dir | Out-Null
+    New-Item -Type Directory -Force -ea 0 $tmp_dir | Out-Null
     Get-ChildItem $tmp_dir | Where-Object PSIsContainer -eq $false | Remove-Item   #clear tmp dir files
 
     $aup = Get-AUPackages $Name
