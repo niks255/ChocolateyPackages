@@ -14,9 +14,6 @@
     <licenseUrl>https://vk.com/terms</licenseUrl>
     <tags>vk vkontakte messenger admin</tags>
     <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/vkme</packageSourceUrl>
-    <dependencies>
-      <dependency id="chocolatey-core.extension" version="1.3.4" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
