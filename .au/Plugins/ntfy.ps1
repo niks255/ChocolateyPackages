@@ -1,11 +1,12 @@
 param(
     [string]$Title = 'Chocolatey',
     [string]$Topic = '',
-    [string]$Uri = '',
+    [string]$Uri = 'https://ntfy.sh',
     [string]$User = '',
     [string]$Password = '',
     [string]$IconURL = '',
     [switch]$SendAlways = $false,
+    [switch]$Firebase   = $true,
     [switch]$ErrorsOnly = $false
 )
 
@@ -47,6 +48,7 @@ if ($updated -gt 0 -Or $SendAlways)
         priority = if ($errors -gt 0) { 5 } else { 2 }
         icon     = $IconURL
         tags     = @("chocolatey", "alert")
+        firebase = if ($Firebase) { "yes" } else { "no" }
     } | ConvertTo-Json
 
     Invoke-RestMethod -Method POST `
