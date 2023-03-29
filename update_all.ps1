@@ -58,7 +58,6 @@ $Options = [ordered]@{
         Uri        = $Env:ntfy_uri
         User       = $Env:ntfy_user
         Password   = $Env:ntfy_password
-        Firebase   = $false
         ErrorsOnly = $true
     }
 
