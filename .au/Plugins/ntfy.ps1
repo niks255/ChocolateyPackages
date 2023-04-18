@@ -24,7 +24,8 @@ $updated = @($Info.result.updated).Count
 $pushed  = @($Info.result.pushed).Count
 $errors = $Info.error_count.total
 
-if ($updated -gt 0 -Or $SendAlways)
+if ($updated -gt 0 -Or $pushed -gt 0 -Or `
+                       $errors -gt 0 -Or $SendAlways)
 {
     if ($ErrorsOnly -And $errors -eq 0) {
         Write-Host 'ErrorsOnly is set and no errors occured, not sending anything'
