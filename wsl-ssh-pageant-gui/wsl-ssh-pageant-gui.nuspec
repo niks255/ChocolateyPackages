@@ -25,6 +25,9 @@ The difference between the gui.exe binary and the regular binaries is the subsys
     <bugTrackerUrl>https://github.com/benpye/wsl-ssh-pageant/issues</bugTrackerUrl>
     <releaseNotes>https://github.com/benpye/wsl-ssh-pageant/releases</releaseNotes>
     <projectSourceUrl>https://github.com/benpye/wsl-ssh-pageant</projectSourceUrl>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.3.4" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
