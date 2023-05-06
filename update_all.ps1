@@ -52,16 +52,6 @@ $Options = [ordered]@{
         Branch   = 'master'
     }
 
-    ntfy = @{
-        Title      = 'Community Repository'
-        Topic      = $Env:ntfy_topic
-        Uri        = $Env:ntfy_uri
-        User       = $Env:ntfy_user
-        Password   = $Env:ntfy_password
-        IconURL    = $Env:ntfy_icon
-        ErrorsOnly = $true
-    }
-
     ForcedPackages = $ForcedPackages -split ' '
     BeforeEach = {
         param($PackageName, $Options )
