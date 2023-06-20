@@ -12,10 +12,11 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $page  = Invoke-WebRequest -Uri 'https://vk.me/app' -UseBasicParsing
     $url64 = $page.Links -match '.*.exe' | Select -Expand href
+    Get-ExeFileVersion -URL $url64
 
     @{
         URL64 = "$url64"
-        Version = $url64 -replace '(.*vk-messenger-)|(-build)|(-.*)'
+        Version = "$version"
     }
 }
 
