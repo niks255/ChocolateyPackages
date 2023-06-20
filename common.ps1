@@ -94,14 +94,17 @@ function global:Get-ExeFileVersion {
 
     # Windows can do this
     if ($IsWindows) {
-        $global:version = ([System.Diagnostics.FileVersionInfo]::GetVersionInfo("$TempFile").ProductVersion).Trim()
+        $VersinInfo = [System.Diagnostics.FileVersionInfo]::GetVersionInfo("$TempFile")
+        $ProductRevision = $VersinInfo.ProductVersionRaw.Revision
+        $ProductVersion = ($VersinInfo.FileVersion).Trim()
+        $global:version = "${ProductVersion}.${ProductRevision}"
     }
 
     # Let's use exiftool here
     if ($IsLinux) {
         $exiftool = "$(Get-Command 'exiftool')"
         if ($exiftool) {
-            $global:version = (exiftool -s -s -s -ProductVersion "$TempFile").Trim()
+            $global:version = (exiftool -s -s -s -ProductVersionNumber "$TempFile").Trim()
         }
     }
     
