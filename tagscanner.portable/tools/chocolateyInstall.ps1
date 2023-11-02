@@ -5,10 +5,10 @@ $InstallPath = "$([Environment]::GetFolderPath('ApplicationData'))\\TagScanner P
 $packageArgs = @{
     packageName    = $env:ChocolateyPackageName
     UnzipLocation  = $InstallPath
-    url            = 'https://www.xdlab.ru/files/tagscan-6.1.15.zip'
-    url64          = 'https://www.xdlab.ru/files/tagscan-6.1.15_x64.zip'
-    checksum       = 'f303d2dad7d9dfb2bdb67d266cb293a3bb553f7e0eedc9016fa31522d8441c2f'
-    checksum64     = 'beec79185a1c961ec66c3afadb5b83680082dfb83b1ffad08fa81c6701481125'
+    url            = 'https://www.xdlab.ru/files/tagscan-6.1.16.zip'
+    url64          = 'https://www.xdlab.ru/files/tagscan-6.1.16_x64.zip'
+    checksum       = 'd7354f85533b3e6f326ed403a418cc3fa96d349d98b855ea65d1b983c498cd4c'
+    checksum64     = 'bc866610f649b5d8f21e3b3a04eeaac230d4b0742b90f5e82d8312082b66387c'
     checksumtype   = 'sha256'
     checksumtype64 = 'sha256'
 }
