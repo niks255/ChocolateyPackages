@@ -7,7 +7,7 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   UnzipLocation  = $binarypath
   url            = 'https://github.com/crystalidea/uninstall-tool/releases/download/v3.7.3/uninstalltool_portable.zip'
-  checksum       = '5c81fac52da5a89441adb425a62b7ace218e4312b7d474f4917c8ffa2abec1a5'
+  checksum       = '855cadd9de770007364a2adcc963b23b7ea998fd0dbda4cc5b5179bf4578f2f2'
   checksumtype   = 'sha256'
 }
 

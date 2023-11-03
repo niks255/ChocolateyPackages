@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>uninstalltool</id>
-    <version>3.7.3</version>
+    <version>3.7.3.20231103</version>
     <title>Uninstall Tool</title>
     <authors>CrystalIdea Software</authors>
     <owners>niks255</owners>

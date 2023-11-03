@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>uninstalltool.portable</id>
-    <version>3.7.3</version>
+    <version>3.7.3.20231103</version>
     <title>Uninstall Tool (Portable)</title>
     <authors>CrystalIdea Software</authors>
     <owners>niks255</owners>
