@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>adguardhome</id>
-    <version>0.107.45</version>
+    <version>0.107.46</version>
     <title>AdGuard Home</title>
     <authors>AdGuard Software Limited</authors>
     <owners>niks255</owners>
