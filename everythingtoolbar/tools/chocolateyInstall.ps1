@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'msi'
-  url64          = 'https://github.com/srwi/EverythingToolbar/releases/download/1.3.2/EverythingToolbar-1.3.2.msi'
-  checksum64     = 'bba20adf0d1c631828515532936e88c0d4a2ca9ec3317c435534f19b7721011e'
+  url64          = 'https://github.com/srwi/EverythingToolbar/releases/download/1.3.3/EverythingToolbar-1.3.3.msi'
+  checksum64     = '745d87e8e63b95a8a655fb5f79e0127213ef5f42a70bad74220e9536ebd910e8'
   checksumtype64 = 'sha256'
   SilentArgs     = "/qn /norestart"
   ValidExitCodes = @(0, 3010, 1641)
