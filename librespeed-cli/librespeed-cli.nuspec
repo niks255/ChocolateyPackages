@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>librespeed-cli</id>
-    <version>1.0.10</version>
+    <version>1.0.11</version>
     <title>LibreSpeed command line tool</title>
     <authors>LibreSpeed</authors>
     <owners>niks255</owners>
