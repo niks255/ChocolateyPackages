@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url            = 'https://github.com/crystalidea/uninstall-tool/releases/download/v3.7.3/uninstalltool_setup.exe'
-  checksum       = '2904050a27b48fe508e9f1ee04c55a4142689712a954f4c2005d2dc4fe3f1530'
+  url            = 'https://github.com/crystalidea/uninstall-tool/releases/download/v3.7.4/uninstalltool_setup.exe'
+  checksum       = '66b696e76af8e72272883e22e7f5e42e168195c2e42fddf6d9e4e59c8a003ee4'
   checksumType   = 'sha256'
   silentArgs     = '/VERYSILENT /NORESTART /SP- /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS'
   validExitCodes = @(0, 3010, 1641)
